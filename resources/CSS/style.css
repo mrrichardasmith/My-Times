@@ -19,10 +19,11 @@ header  {
   position: fixed;
   background-color: white;
   width: 100%;
+  height: 100px;
+  border: solid black 1px;
 }
 
 .logo  {
-  z-index: 1;
   display: flex;
   align-items: center;
   width: 25%;
@@ -36,7 +37,6 @@ nav  {
   justify-content: flex-end;
   width: 75%;
   margin: 20px;
-
 }
 
 nav span a {
@@ -44,21 +44,43 @@ nav span a {
   color: black;
 }
 
+.content  {
+  display: flex;
+}
+
+.col1  {
+  width: 50%;
+}
+
+.col2  {
+  border: solid black 1px;
+  width: 25%;
+  padding: 2%;
+}
+
+.col3  {
+  border: solid black 1px;
+  width: 25%;
+}
+
 .mainstory  {
-  position: relative top;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 50%;
   margin-left: 10%;
-  z-index: 1;
-
-
 }
 
 .picannotate  {
   display: flex;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  width: 100%;
+  height: 300px;
+  margin-top: 5%;
+}
+
+.picannotate2  {
+  display: flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
   width: 100%;
   height: 300px;
   margin-top: 5%;
@@ -79,10 +101,6 @@ nav span a {
   display: flex;
 }
 
-.subpic  {
-  display: flex;
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png"),url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
-}
 
 .subtext h2  {
   font-size: 25px;
@@ -93,4 +111,25 @@ nav span a {
 
 .subtext p  {
   padding: 5px;
+}
+
+.picsub  {
+  display: flex;
+  justify-content: space-around;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+}
+
+.pic1  {
+  width: 48%;
+  padding 2px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+}
+
+.pic2  {
+  padding: 2px;
+  width: 48%;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
 }

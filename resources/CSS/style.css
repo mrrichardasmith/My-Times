@@ -9,20 +9,23 @@ body {
 }
 
 header  {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
-  border: solid black 1px;
   color: black
   font-family: verdana;
   font-size: 16px;
   font-weight: bold;
+  position: fixed;
+  background-color: white;
+  width: 100%;
 }
 
 .logo  {
+  z-index: 1;
   display: flex;
   align-items: center;
   width: 25%;
-  border: solid black 1px;
   margin: 20px;
   padding: 10px;
 }
@@ -31,7 +34,6 @@ nav  {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  border: solid black 1px;
   width: 75%;
   margin: 20px;
 
@@ -43,12 +45,14 @@ nav span a {
 }
 
 .mainstory  {
+  position: relative top;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 35%;
+  width: 50%;
   margin-left: 10%;
-  border: solid black 1px;
+  z-index: 1;
+
 
 }
 
@@ -75,21 +79,18 @@ nav span a {
   display: flex;
 }
 
-.picsub  {
+.subpic  {
   display: flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png"),url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
 }
 
-.sub h2  {
+.subtext h2  {
   font-size: 25px;
   font-weight: bold;
   font-family: Georgia;
   padding: 5px;
 }
 
-.sub p  {
+.subtext p  {
   padding: 5px;
-}
-
-.sub  {
-  border: solid black 1px;
 }

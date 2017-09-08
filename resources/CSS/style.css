@@ -1,10 +1,21 @@
 
 
-#green  {
+#greenCompanyName  {
   color: MediumAquaMarine;
   align-items: center;
   padding: 10px;
 }
+
+#whiteCompanyName  {
+  color: white;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-right: solid white 2px;
+}
+
+
 
 header  {
   z-index: 2;
@@ -61,10 +72,10 @@ nav span a {
 }
 
 footer  {
+  display: flex;
   height: 325px;
   width: 100%;
   background-color: MediumAquamarine;
-  margin: 50px;
 }
 
 .mainstory  {
@@ -140,22 +151,42 @@ footer  {
 
 #cookie  {
   text-align: center;
+  padding: 11px 20px;
 }
 
 .sidebar  {
   display: flex;
   flex-flow: column;
-  align-items: flex-start;
-  width: 80%;
-  background-color: whitesmoke;
+  align-items: center;
+  width: 70%;
+  padding: 11px 20px;
 }
+
 
 .sidebar span  {
   display: block;
   text-align: left;
   font-size: 12px;
   color: DimGray;
-  padding: 11px 20px;
   border-bottom: solid black 1px;
-  width: 80%;
+  width: 100%;
+  padding: 11px 20px;
+  background-color: whitesmoke;
+
+}
+
+footer  {
+  display: flex;
+  margin-top: 50px;
+}
+
+footer nav  {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#lastline  {
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -192,3 +192,8 @@ footer  {
   font-size: 14px;
   text-align: center;
 }
+
+#buffer  {
+  height: 100px;
+  width: 100%;
+}

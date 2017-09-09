@@ -1,4 +1,6 @@
+body  {
 
+}
 
 #greenCompanyName  {
   color: MediumAquaMarine;
@@ -40,11 +42,18 @@ header  {
   padding: 10px;
 }
 
-nav  {
+nav.headnav  {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 75%;
+  margin: 20px;
+}
+
+nav.footernav  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 20px;
 }
 
@@ -55,7 +64,6 @@ nav span a {
 
 .content  {
   display: flex;
-  position: relative;
 }
 
 .col1  {
@@ -73,9 +81,13 @@ nav span a {
 
 footer  {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 325px;
   width: 100%;
   background-color: MediumAquamarine;
+  margin-top: 20px;
+
 }
 
 .mainstory  {
@@ -175,18 +187,8 @@ footer  {
 
 }
 
-footer  {
-  display: flex;
-  margin-top: 50px;
-}
-
-footer nav  {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
 #lastline  {
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
 }
